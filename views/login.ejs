@@ -1,0 +1,25 @@
+<%- include('partials/header') -%>
+
+<div class="row find-and-report-form">
+    <form action = "/login" method = "POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate" name="email">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="password" type="password" class="validate" name="password">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Sigin
+            <i class="material-icons right"></i>
+        </button>
+    </form>
+    <a style="margin:20px 0;"href = "/signup" class="btn waves-effect waves-light" type="submit" name="action">Signup
+        <i class="material-icons right"></i>
+    </a>
+</div>
+<%- include('partials/footer') -%>

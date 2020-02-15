@@ -2,6 +2,14 @@ html, body {
   height: 100%;
   margin: 0;
 }
+ /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 100%;
+}
+      /* Optional: Makes the sample page fill the window. */
+
+
 .wrapper {
   min-height: 100%;
   margin-bottom: -50px;
@@ -20,15 +28,30 @@ html, body {
 .brand-logo{
   font-family: 'Zhi Mang Xing', cursive;
   /* font-size:40px; */
-}455l
+}
 
 
 /* Laptops and Desktops */
 @media only screen and (min-width: 992px) {
+
     .find-and-report-form {
     margin: 500px auto;
     padding: 0 20%;
     
+    }
+    .j1
+    {
+      float:none; /* disable the float */
+      display: inline-block; /* make blocks inline-block */
+      text-align: initial; 
+    }
+    .crop-items{
+      margin:100px auto;
+      width: 80%;
+    }
+    .j{
+      height:400px;
+       width:400px;
     }
     /* css for 1st image in index page */
      .front-image{
@@ -62,7 +85,10 @@ html, body {
     margin: 300px auto;
     padding: 0 10%;
     }
-
+    .crop-items{
+      margin:100px auto;
+      width: 80%;
+    }
     /* css for 1st image in index page */
     .front-image{
       height:auto;
@@ -90,6 +116,10 @@ html, body {
     .find-and-report-form {
     margin: 200px auto;
     padding: 0 5%;
+    }
+    .crop-items{
+      margin:50px auto;
+      width: 90%;
     }
 
     /* css for 1st image in index page */
