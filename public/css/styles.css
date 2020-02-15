@@ -16,14 +16,16 @@ html, body {
 
  }
  .nav-wrapper{
-  background-color:rgba(80, 4, 17, 0.801);
+  /* background-color:rgba(80, 4, 17, 0.801); */
+  background-color: #008577;
  }
 .footer,.push {
   height: 50px;
   
 }
 .page-footer{
-  background-color:rgba(80, 4, 17, 0.801);
+  /* background-color:rgba(80, 4, 17, 0.801); */
+  background-color: #008577;
 }
 .brand-logo{
   font-family: 'Zhi Mang Xing', cursive;

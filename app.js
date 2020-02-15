@@ -44,7 +44,7 @@ app.get("/", function(req,res){
 });
 
 app.get('/cropInfo', function (req, res) {
-  res.render('cropInfo');
+  res.render('cropDetails');
 });
 
 app.post("/cropInfo", function (req, res) {
@@ -58,6 +58,7 @@ app.post("/cropInfo", function (req, res) {
     console.log("Unable to save the files");
     Crop.findOneAndUpdate({ crop_type: cropType }, { $set: { market_value: marketValue }, $set: { fertilizers: fertilizersArray }} ,{ new: true }, (err) => console.log("Data was updated"));
   });
+  res.redirect("/cropInfo");
 });
 
 app.get("/login", function(req,res){
@@ -75,6 +76,9 @@ app.post("/login", function(req,res){
   });
 });
 
+app.get("/pin", function(req,res){
+  res.sendFile("/home/terance/Desktop/beach-hack/views/nearestLocation.html");
+});
 
 app.get("/signup", function(req,res){
   res.render("signup");
